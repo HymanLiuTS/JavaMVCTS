@@ -32,7 +32,7 @@ public class ProfileController {
 
 	@RequestMapping("/profile")
 	public String displayProfile(ProfileForm profileForm) {
-		return "profile/resultPage";
+		return "profile/profilePage";
 	}
 
 	/**
@@ -45,7 +45,7 @@ public class ProfileController {
 	public String saveProfile(@Valid ProfileForm profileForm, BindingResult bindingResult) {
 
 		if (bindingResult.hasErrors()) {
-			return "profile/resultPage";
+			return "profile/profilePage";
 		}
 
 		System.out.println("save ok" + profileForm);
