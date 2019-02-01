@@ -82,7 +82,7 @@ public class PictureUploadController {
 		InputStream in = file.getInputStream();
 		OutputStream out = new FileOutputStream(tempFile);
 		IOUtils.copy(in, out);
-		return new DefaultResourceLoader().getResource(tempFile.getCanonicalPath());
+		return new FileSystemResource(tempFile.getAbsolutePath());
 	}
 
 	private boolean isImage(MultipartFile file) {
