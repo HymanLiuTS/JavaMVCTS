@@ -1,4 +1,4 @@
-package codenest.autoconfigdemo.demo;
+package com.cet.ibs.cloud;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

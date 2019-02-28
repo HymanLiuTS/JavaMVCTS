@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import codenest.autoconfigdemo.demo.SayHello;
+import com.cet.ibs.cloud.SayHello;
 
 @Controller
 public class HelloController {

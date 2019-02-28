@@ -1,4 +1,4 @@
-package codenest.autoconfigdemo.demo;
+package com.cet.ibs.cloud;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
