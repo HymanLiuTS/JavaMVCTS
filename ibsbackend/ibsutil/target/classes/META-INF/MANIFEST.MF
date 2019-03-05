@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: ibsutil
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Hyman
+Implementation-Vendor-Id: com.cet.ibscloud
+Build-Jdk: 1.8.0_201
+Implementation-URL: http://www.example.com
+Created-By: Maven Integration for Eclipse
+
