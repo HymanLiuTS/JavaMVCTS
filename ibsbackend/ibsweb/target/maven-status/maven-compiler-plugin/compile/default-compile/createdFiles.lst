@@ -5,8 +5,10 @@ com\cet\ibscloud\config\datasource\ActivitiMybatisConfig.class
 com\cet\ibscloud\config\WebConfiguration.class
 com\cet\ibscloud\demo\domain\Teacher.class
 com\cet\ibscloud\config\datasource\BusinessMybatisConfig.class
+com\cet\ibscloud\config\SSLConfig$1.class
 com\cet\ibscloud\ServletInitializer.class
 com\cet\ibscloud\config\datasource\PecconfigMybatisConfig.class
 com\cet\ibscloud\common\Result.class
 com\cet\ibscloud\IbswebApplication.class
+com\cet\ibscloud\config\SSLConfig.class
 com\cet\ibscloud\config\DruidConfig.class
