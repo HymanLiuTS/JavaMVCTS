@@ -1,9 +1,8 @@
 package com.cet.ibscloud.demo.controller;
 
-import static org.junit.Assert.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.Before;
@@ -40,8 +39,8 @@ public class DemoControllerTest {
 		
 		this.mockMvc.perform(get("/api/"))
 		.andDo(print())
-		.andExpect(status().isFound())
-		.andExpect(redirectedUrl("/ibsweb/api/test"));
+		.andExpect(status().isFound());
+		//.andExpect(redirectedUrl("/ibsweb/api/test"));
 	}
 	
 	@Test
@@ -53,5 +52,15 @@ public class DemoControllerTest {
 		.andDo(print())
 		.andExpect(status().isOk());
 	}
+	
+	@Test
+	public void should_Get_Student() throws Exception {
+		
+		this.mockMvc.perform(get("/api/student/1"))
+		.andDo(print())
+		.andExpect(status().isOk())
+		.andExpect(content().json("{\"succeed\":true,\"message\":\"Hello Springboot\",\"data\":{\"id\":1,\"name\":\"Hyman\",\"age\":18}}"));
+	}
+
 
 }

@@ -13,7 +13,7 @@ import com.cet.ibscloud.ibsdao.business.model.Student;
 import com.cet.ibscloud.ibsutil.LogUtil;
 
 @Service
-public class DemoService {
+public class DemoService implements StudentsService{
 
 	@Autowired
 	private Teacher teacher;
