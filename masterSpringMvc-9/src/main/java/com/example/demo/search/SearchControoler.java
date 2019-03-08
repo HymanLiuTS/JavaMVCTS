@@ -18,20 +18,19 @@ import com.example.demo.domain.Tweet;
 
 @RestController
 @RequestMapping("/api/search")
-public class SearchControoler {
+public class SearchControoler implements TweetSearch {
 
-	private SearchService serviceService;
+	private TweetSearch tweetSearch;
 
 	@Autowired
-	public SearchControoler(SearchService serviceService) {
-		this.serviceService = serviceService;
+	public SearchControoler(TweetSearch tweetSearch) {
+		this.tweetSearch = tweetSearch;
 	}
 
 	@RequestMapping(value = "/{searchType}", method = RequestMethod.GET)
 	public List<Tweet> search(@PathVariable String searchType, @MatrixVariable List<String> keywords) {
-		List<Tweet> tweets = serviceService.search(searchType, keywords);
+		List<Tweet> tweets = tweetSearch.search(searchType, keywords);
 		return tweets;
 	}
 
-	
 }

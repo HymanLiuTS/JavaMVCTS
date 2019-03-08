@@ -6,6 +6,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 //@JsonIgnoreProperties(value={"id"})
 public class Tweet {
 
+	public Tweet() {
+	}
+	
+	public Tweet(String name) {
+		this.name = name;
+	}
+
 	private int id;
 
 	private String name;

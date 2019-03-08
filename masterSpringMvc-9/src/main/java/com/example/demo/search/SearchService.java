@@ -10,7 +10,7 @@ import com.example.demo.domain.Tweet;
 import com.example.demo.domain.Twitter;
 
 @Service
-public class SearchService {
+public class SearchService implements TweetSearch{
 
 	private Twitter twitter;
 
